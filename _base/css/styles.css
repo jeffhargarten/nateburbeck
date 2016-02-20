@@ -1,0 +1,59 @@
+    body { font-family:Helvetica; overflow-x:hidden; }
+    #wrapper { width:751px;  margin-left:auto; margin-right:auto; }
+    .galleria{ width: 700px; height: 400px; background: #000 }
+
+    h2 { border-bottom:1px solid #ddd; }
+
+    .scrollToTop { color:#777 !important; text-align:center; padding:15px; }
+    .scrollToTop:hover { color:#333 !important; cursor:pointer; }
+    #footer { text-align:center; padding:20px; }
+
+    a { color:#777; text-decoration:none; }
+    a:hover { color:#333; }
+    h1 a, li a { color:#000; text-decoration:none; }
+
+    #social img { width:40px; }
+
+
+    .slicknav_menu { font-size:16px; box-sizing:border-box; background:#fff !important; padding:5px; }
+    .slicknav_nav { background:#333 !important; }
+    .slicknav_nav a:hover { -webkit-border-radius:0 !important; -moz-border-radius:0 !important; border-radius:0 !important; background: #ccc; color: #222; }
+    .slicknav_btn { margin:0 !important; text-decoration: none; text-shadow: 0 1px 1px rgba(255, 255, 255, 0.75); -webkit-border-radius:0px !important; -moz-border-radius:0 !important; border-radius:0 !important; background-color:#333 !important; }
+
+    #header h1 { float:left; }
+    #menu { float:right; padding-top:16px; }
+    #menu ul li { display:inline; }
+    .slicknav_menu { display:none; }
+
+    .blogBlock { text-align:center; padding:15px; }
+
+    .breaker { clear:both; }
+    figure img { width:100%; }
+
+    li { list-style-type: none; }
+    li { color:#333; }
+
+    .tumblr_posts { padding:0; }
+    .tumblr_posts img { width:100%; }
+    .tmblr-iframe { display:none !important; }
+    .tumblr_post {      }
+     .tumblr_title { 
+
+     }
+     .tumblr_body img {  
+
+     }
+     .read_more_container {
+          
+     }
+     .read_more_container a {
+        
+     }
+
+     @media (max-width: 750px) {
+        #wrapper { width:100%; padding:0; }
+        #header h1 { float:none; }
+        #menu { display:none; }
+        .slicknav_menu { display:block;}
+        figure { margin:0 !important; }
+     }
