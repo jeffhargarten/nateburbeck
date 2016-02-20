@@ -1,3 +1,24 @@
+ d3.csv("/paintings/gallery.csv", function(error, rows) {
+  rows.forEach(function(d) {
+  d.img = d.img;
+  d.title = d.title;
+  d.medium = d.medium;
+    });
+
+ function spitFirstGalleries(container){
+ d3.select(container).selectAll(".gallery")
+  .data(rows).enter().append("figure")
+  .attr("class","feed-item")
+  .attr("itemprop","associatedMedia")
+  .attr("itemscope")
+  .attr("itemtype","http://schema.org/ImageObject")
+  .html(function(d){ 
+    return '<a href="/paintings/' + d.img + '" itemprop="contentUrl" data-size="600x400"><img src="/paintings/' + d.img + '" itemprop="thumbnail" alt="' + d.title + '" /></a><figcaption itemprop="caption description">' + d.title + '</figcaption>'
+ });
+}
+
+if ($("#gallery").length) { spitFirstGalleries("#gallery"); }
+
  $(function(){
     $('#menu').slicknav({label: ''});
   });
@@ -12,7 +33,6 @@
    $('[itemprop=contentUrl]').each(function(i, obj) {
         $(this).attr("data-size", "" + ($(this).find("img").width() * 1.8) + "x" + ($(this).find("img").height()  * 1.8));
     });
-  });
 
 // Galleria.loadTheme('_base/js/galleria/themes/classic/galleria.classic.min.js');
 // Galleria.run('.galleria');
@@ -322,3 +342,5 @@ initPhotoSwipeFromDOM('.my-gallery');
 //         // author: 'John Doe'
 
 //     }];
+});
+});
