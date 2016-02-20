@@ -10,7 +10,7 @@
   .data(rows).enter().append("figure")
   .attr("class","feed-item")
   .attr("itemprop","associatedMedia")
-  .attr("itemscope")
+  // .attr("itemscope")
   .attr("itemtype","http://schema.org/ImageObject")
   .html(function(d){ 
     return '<a href="/paintings/' + d.img + '" itemprop="contentUrl" data-size="600x400"><img src="/paintings/' + d.img + '" itemprop="thumbnail" alt="' + d.title + '" /></a><figcaption itemprop="caption description">' + d.title + '</figcaption>'
