@@ -2,7 +2,7 @@
   rows.forEach(function(d) {
   d.img = d.img;
   d.title = d.title;
-  d.medium = d.medium;
+  d.meta = d.meta;
     });
 
  function spitFirstGalleries(container){
