@@ -13,6 +13,7 @@
   // .attr("itemscope")
   .attr("itemtype","http://schema.org/ImageObject")
   .html(function(d){ 
+   $("body").append("<div>");
     return '<a href="/paintings/' + d.img + '" itemprop="contentUrl" data-size="600x400"><img src="/paintings/' + d.img + '" itemprop="thumbnail" alt="' + d.title + '" /></a><figcaption itemprop="caption description">' + d.title + '</figcaption>'
  });
 }
@@ -24,8 +25,6 @@ if ($("#gallery").length) { spitFirstGalleries("#gallery"); }
   });
 
   $('a.lightbox').featherlight({ targetAttr: 'href' });
-  
-  $("body").append("<div>");
   
   $(document).bind('DOMNodeInserted', function(event) {
   $('.tmblr-iframe').hide();
