@@ -29,8 +29,8 @@ if ($("#gallery").length) { spitFirstGalleries("#gallery"); }
   $('.tmblr-iframe').hide();
   $(this).attr("data-size", "" + ($(this).find("img").width() * 1.8) + "x" + ($(this).find("img").height() * 1.8) + "");
   $(".pswp__img").css("height","");
-  $(".pswp__img").css("max-width","100%");
-  $(".pswp__img, .pswp__zoom-wrap").css("width","100%");
+  // $(".pswp__img").css("max-width","100%");
+  // $(".pswp__img, .pswp__zoom-wrap").css("width","100%");
   $(".pswp__zoom-wrap").css("transform","");
   
   });
