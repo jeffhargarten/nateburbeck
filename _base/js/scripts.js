@@ -25,7 +25,7 @@ if ($("#gallery").length) { spitFirstGalleries("#gallery"); }
 
   $('a.lightbox').featherlight({ targetAttr: 'href' });
   
-  $("body").append("div");
+  $("body").append("<div>");
   
   $(document).bind('DOMNodeInserted', function(event) {
   $('.tmblr-iframe').hide();
