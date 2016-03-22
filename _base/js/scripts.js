@@ -35,7 +35,6 @@ if ($("#gallery").length) { spitFirstGalleries("#gallery"); }
   // $(".pswp__img, .pswp__zoom-wrap").css("width","100%");
   // $(".pswp__zoom-wrap").css("transform","");
     });
-  
   });
 
   $( document ).ready(function() {
@@ -57,7 +56,6 @@ $('.scrollToTop').click(function(){
   });
 
 var initPhotoSwipeFromDOM = function(gallerySelector) {
-
     // parse slide data (url, title, size ...) from DOM elements 
     // (children of gallerySelector)
     var parseThumbnailElements = function(el) {
